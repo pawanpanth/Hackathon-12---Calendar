@@ -17,7 +17,7 @@ month[11] = "December";
 
 const App = () => {
   const [show, setShow] = useState(false);
-   const [years,setYears] = useState();
+  const [years,setYears] = useState();
 
   const [curr_month,set_curr_month] = useState(new Date().getMonth());
   const [curr_year,set_curr_year] = useState(new Date().getFullYear());
@@ -28,8 +28,8 @@ const App = () => {
   
   const [rows,set_rows] = useState(0);
   const [tail_blank, setTailBlank] = useState(0);
-  // const [today,setToday] =useState(new Date().getDate());
-  const [today,setToday] =useState(1);
+  const [today,setToday] =useState(new Date().getDate());
+  //const [today,setToday] =useState(1);
   
 
   const monthHandler =(evt)=>{
